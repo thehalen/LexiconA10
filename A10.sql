@@ -7,7 +7,7 @@ CREATE TABLE player(
 	Age INT,
 	`Name` VARCHAR(30),
 	PRIMARY KEY(IDNum))
-    ENGINE=InnoDB;
+    	ENGINE=InnoDB;
 
 CREATE TABLE jacket(
 	Size INT,
@@ -17,13 +17,13 @@ CREATE TABLE jacket(
 	PRIMARY KEY(IDNum, Model),
 	FOREIGN KEY(IDNum) REFERENCES player(IDNum)
 	ON DELETE CASCADE)
-    ENGINE=InnoDB;
+    	ENGINE=InnoDB;
 
 CREATE TABLE competition(
 	CompName VARCHAR(30),
 	DatePlayed DATE,
 	PRIMARY KEY(CompName))
-    ENGINE=InnoDB;
+    	ENGINE=InnoDB;
 
 CREATE TABLE club(
 	ClubNumber INT,
